@@ -10,15 +10,13 @@
   .light-mode {
     display: none;
   }
-.mobile-menu-toggle {
+  .mobile-menu-toggle {
     display: block;
     cursor: pointer;
   }
   .navbar .menu {
     display: none;
   }
-
-
 
   .menu-item .dark-mode-toggle {
     padding: 1rem 1.5rem;
@@ -230,5 +228,223 @@
     text-decoration: none;
     font-weight: 300;
   }
-  /* Mobile menu */
+}
+/* IPAD */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  .navbar {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mobile-menu-toggle {
+    display: none;
+  }
+
+  .hero-content {
+    gap: 3rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .article {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  /* Stats Section iPad Styling */
+  .stats--content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .stats-intro {
+    flex: 1;
+    text-align: left;
+  }
+
+  .stats-heading {
+    font-size: 2.8rem;
+    line-height: 1.3;
+  }
+
+  .stats-subtext {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 60rem;
+    flex: 2;
+  }
+
+  /* Testimonial iPad Styling */
+  .testimonial-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .testimonial-image {
+    flex: 1;
+  }
+
+  .testimonial-image img {
+    max-width: 40rem;
+    height: auto;
+  }
+
+  .testimonial-text {
+    flex: 1;
+  }
+
+  .customer-dec {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  /* Blog Section iPad Styling */
+  .blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .blog-card {
+    margin-bottom: 4rem;
+    position: relative;
+  }
+
+  .blog-card .blog-img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .blog-content {
+    width: 85%;
+    padding: 2rem 2.5rem;
+    bottom: -3rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.3;
+  }
+
+  /* CTA iPad Styling */
+  .cta {
+    padding: 5rem 0;
+  }
+
+  .cta-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cta-title {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+    line-height: 1.3;
+  }
+
+  /* Footer iPad Styling */
+  .footer-content {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .footer-logo img {
+    max-width: 14rem;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 4rem;
+    flex: 2;
+    flex-wrap: wrap;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .footer-column h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  .footer-column .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .footer-column .footer-menu li a {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 }
