@@ -1,7 +1,10 @@
-var logoDark = document.querySelector(".logo-dark");
-var logoLight = document.querySelector(".logo-light");
-var btnMode = document.querySelector(".dark-mode-toggle");
-var body = document.body;
+let logoDark = document.querySelector(".logo-dark");
+let logoLight = document.querySelector(".logo-light");
+let btnMode = document.querySelector(".dark-mode-toggle");
+let body = document.body;
+let btnMenu = document.querySelector(".mobile-menu-toggle");
+let menu = document.querySelector(".menu");
+let btnClose = document.querySelector(".menu-close");
 
 // Toggle dark mode on button click
 function darkMode() {
@@ -15,4 +18,18 @@ function darkMode() {
     logoLight.style.display = "block";
     btnMode.innerHTML = `<i title="Dark Mode" class="fas fa-moon"></i>`;
   }
+  console.log(document.querySelector(".logo-dark"));
 }
+
+
+// Toggle menu on button click
+btnMenu.addEventListener("click", function () {
+  menu.classList.toggle("active");
+  if (menu.classList.contains("active")) {
+    btnMenu.innerHTML = `<i class="fas fa-times"></i>`;
+  }
+  else {
+    btnMenu.innerHTML = `<i class="fas fa-bars"></i>`;
+  }
+}
+);
